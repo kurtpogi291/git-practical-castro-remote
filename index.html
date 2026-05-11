@@ -14,11 +14,19 @@
     <button id="btn1">Alert Me</button>
     <button id="btn2">Change Color</button>
 
-    <script>     
+    <script>
         const paragraph = document.getElementById("parag1");
 
         const alertButton = document.querySelector("#btn1");
         const colorButton = document.querySelector("#btn2");
+
+        alertButton.addEventListener("click", function () {
+            alert("Button 1 triggered");
+        });
+
+        colorButton.addEventListener("dblclick", function () {
+            paragraph.style.color = "red";
+        });
     </script>
 
 </body>
